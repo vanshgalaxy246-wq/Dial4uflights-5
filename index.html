@@ -2,414 +2,387 @@
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
   <title>London to Malaga Flights | Cheap Flight Deals | Dial4UFlights</title>
   <meta name="description" content="Find London to Malaga flights and compare available options for your trip to Spain. Explore flight choices, airport information and personalised booking support with Dial4UFlights.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://dial4uflights-5.vercel.app/">
+  <!-- Open Graph -->
   <meta property="og:title" content="London to Malaga Flights | Cheap Flight Deals | Dial4UFlights">
   <meta property="og:description" content="Find London to Malaga flights and compare available options. Expert support from Dial4UFlights.">
+  <meta property="og:image" content="https://dial4uflights.co.uk/assets/og-london-malaga.webp">
   <meta property="og:url" content="https://dial4uflights.co.uk/london-to-malaga-flights">
-  <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="London to Malaga Flights | Cheap Flight Deals | Dial4UFlights">
+  <meta name="twitter:description" content="Find London to Malaga flights and compare available options. Expert support from Dial4UFlights.">
+  <meta name="twitter:image" content="https://dial4uflights.co.uk/assets/og-london-malaga.webp">
+  <!-- fonts & preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet"></noscript>
   <style>
-    :root{--navy:#0b1a2e;--navy2:#12253d;--gold:#d4af37;--gold2:#e8d08a;--cream:#f8f6f0;--white:#fff;--muted:#4b5563;--border:#e5e7eb}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--cream);color:#1a1e2b;line-height:1.6;-webkit-font-smoothing:antialiased}
-    img{max-width:100%;height:auto;display:block}
-    a{color:var(--navy);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:1140px;margin:0 auto;padding:0 1.25rem}
-    .nav{background:var(--navy);color:#fff;padding:.85rem 0;position:sticky;top:0;z-index:100;box-shadow:0 2px 16px rgba(0,0,0,.2)}
-    .nav-in{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
-    .logo{font-weight:700;font-size:1.25rem;color:#fff;letter-spacing:-.02em}
-    .logo span{color:var(--gold)}
-    .nav-links{display:flex;gap:1.15rem;font-size:.86rem;font-weight:500;flex-wrap:wrap}
-    .nav-links a{color:rgba(255,255,255,.85);transition:color .2s}
-    .nav-links a:hover{color:var(--gold);text-decoration:none}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;padding:.75rem 1.4rem;border-radius:50px;font-weight:600;font-size:.92rem;border:none;cursor:pointer;transition:all .25s;text-decoration:none;line-height:1.2}
-    .btn:hover{text-decoration:none;transform:translateY(-2px)}
-    .btn-gold{background:var(--gold);color:var(--navy);box-shadow:0 4px 14px rgba(212,175,55,.3)}
-    .btn-gold:hover{background:var(--gold2);color:var(--navy);box-shadow:0 6px 20px rgba(212,175,55,.4)}
-    .btn-out{background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.35)}
-    .btn-out:hover{background:rgba(255,255,255,.18);border-color:#fff;color:#fff}
-    .btn-navy{background:var(--navy);color:#fff}
-    .btn-navy:hover{background:var(--navy2);color:#fff}
-    .hero{position:relative;background:var(--navy);color:#fff;padding:3.5rem 0 4.5rem;overflow:hidden}
-    .hero::before{content:"";position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1555881403-646f1a5e7e9c?w=1600&q=75&auto=format") center/cover no-repeat;opacity:.35}
-    .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,26,46,.92) 0%,rgba(11,26,46,.7) 50%,rgba(11,26,46,.55) 100%)}
-    .hero-in{position:relative;z-index:2;max-width:680px}
-    .eye{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);background:rgba(212,175,55,.12);padding:.4rem 1rem;border-radius:40px;border:1px solid rgba(212,175,55,.2);margin-bottom:1.1rem}
-    .hero h1{font-size:clamp(2.2rem,5.5vw,3.4rem);font-weight:700;line-height:1.12;letter-spacing:-.03em;margin-bottom:1rem}
-    .hero-lead{font-size:1.15rem;opacity:.92;margin-bottom:1.6rem;line-height:1.55;max-width:560px}
-    .hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin-bottom:1.5rem}
-    .trust{display:flex;flex-wrap:wrap;gap:1.2rem 1.8rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.12);font-size:.9rem;opacity:.88}
-    .trust span::before{content:"✓ ";color:var(--gold);font-weight:700}
-    .search-wrap{margin-top:-2.2rem;position:relative;z-index:5;padding:0 1.25rem}
-    .search-card{max-width:1140px;margin:0 auto;background:#fff;border-radius:18px;padding:1.4rem 1.5rem;box-shadow:0 16px 40px rgba(0,0,0,.1);display:flex;flex-wrap:wrap;gap:1rem;align-items:flex-end;border:1px solid rgba(0,0,0,.04)}
-    .sf{flex:1 1 130px}
-    .sf label{display:block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#6b7280;margin-bottom:.3rem}
-    .sf input,.sf select{width:100%;padding:.55rem 0;border:none;border-bottom:2px solid #e5e7eb;font-size:1rem;font-weight:500;background:transparent;font-family:inherit}
-    .sf input:focus,.sf select:focus{outline:none;border-bottom-color:var(--gold)}
-    section{padding:3.5rem 0}
-    section.cream{background:var(--cream)}
-    section.white{background:#fff}
-    section.navy{background:var(--navy);color:#fff}
-    h2{font-size:clamp(1.55rem,3vw,2.15rem);font-weight:700;color:var(--navy);margin-bottom:1rem;letter-spacing:-.02em;line-height:1.25}
-    section.navy h2{color:#fff}
-    h3{font-size:1.1rem;font-weight:650;margin-bottom:.4rem;color:var(--navy)}
-    section.navy h3{color:#fff}
-    p{margin-bottom:.9rem;color:var(--muted)}
-    section.navy p{color:rgba(255,255,255,.82)}
-    .grid{display:grid;gap:1.15rem}
-    .g2{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-    .g3{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
-    .g4{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
-    .card{background:#fff;border-radius:16px;padding:1.3rem 1.2rem;border:1px solid rgba(0,0,0,.04);box-shadow:0 2px 10px rgba(0,0,0,.03);transition:transform .25s,box-shadow .25s}
-    .card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.08)}
-    .card h3{margin-top:0}
-    .card a{color:var(--gold);font-weight:600}
-    .card a:hover{color:var(--navy)}
-    .icon{font-size:1.6rem;margin-bottom:.5rem}
-    .kw{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.2rem 0}
-    .kw a{display:inline-block;padding:.45rem .9rem;background:#fff;border:1px solid var(--border);border-radius:999px;font-size:.84rem;font-weight:500;color:var(--navy);transition:all .2s}
-    .kw a:hover{background:var(--navy);color:#fff;border-color:var(--navy);text-decoration:none;transform:translateY(-1px)}
-    .cta{text-align:center;padding:2.6rem 1.4rem;background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-radius:18px;margin:1.3rem 0}
-    .cta h2,.cta h3{color:#fff;margin-bottom:.5rem}
-    .cta p{color:rgba(255,255,255,.85);max-width:480px;margin:0 auto 1.2rem}
-    .cta .btn{margin:.3rem}
-    .faq-item{border-bottom:1px solid var(--border)}
-    .faq-q{width:100%;text-align:left;background:none;border:none;padding:1.1rem 0;font-size:1.02rem;font-weight:600;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-family:inherit}
-    .faq-q::after{content:"+";font-size:1.3rem;color:var(--gold);flex-shrink:0;transition:transform .2s}
-    .faq-item.open .faq-q::after{content:"−"}
-    .faq-a{display:none;padding:0 0 1.1rem;color:var(--muted);font-size:.95rem}
-    .faq-item.open .faq-a{display:block}
-    footer{background:var(--navy);color:rgba(255,255,255,.8);padding:2.8rem 0 1.4rem;font-size:.88rem}
-    footer a{color:#fff;transition:color .2s}
-    footer a:hover{color:var(--gold)}
-    .fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1.5rem;margin-bottom:1.8rem}
-    .fg strong{display:block;color:#fff;margin-bottom:.5rem}
-    .fg ul{list-style:none}
-    .fg li{margin-bottom:.3rem}
-    .fb{border-top:1px solid rgba(255,255,255,.12);padding-top:1.1rem;text-align:center;font-size:.8rem;opacity:.75}
-    .sticky{display:none;position:fixed;bottom:0;left:0;right:0;z-index:90;background:#fff;padding:.7rem 1rem;gap:.6rem;justify-content:center;box-shadow:0 -4px 20px rgba(0,0,0,.1);border-top:1px solid #eee}
-    .sticky .btn{flex:1;max-width:170px}
-    .fade-up{animation:fadeUp .7s ease both}
-    @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
-    @media(max-width:900px){.nav-links{display:none}.hero{padding:2.5rem 0 3.5rem}}
-    @media(max-width:640px){.hero-ctas{flex-direction:column}.hero-ctas .btn{width:100%}.search-card{flex-direction:column;align-items:stretch}.cta .btn{display:block;width:100%;margin:.35rem 0}.sticky{display:flex}body{padding-bottom:70px}section{padding:2.5rem 0}}
+    /* reset & base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #f8f7f4; color: #1a1e2b; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+    /* palette */
+    :root { --navy: #0b1a2e; --gold: #d4af37; --gold-light: #e8d08a; --cream: #f8f6f0; --white: #ffffff; --grey: #eae8e2; --text: #1a1e2b; }
+    /* buttons */
+    .btn-primary { background: var(--gold); color: var(--navy); font-weight: 600; padding: 14px 36px; border-radius: 60px; border: none; font-size: 1rem; transition: all 0.2s; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; letter-spacing: 0.3px; box-shadow: 0 4px 12px rgba(212, 175, 55, 0.25); }
+    .btn-primary:hover { background: #c9a832; transform: scale(1.02); box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3); }
+    .btn-secondary { background: rgba(255,255,255,0.12); backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.25); color: white; font-weight: 500; padding: 14px 32px; border-radius: 60px; transition: 0.2s; display: inline-flex; align-items: center; gap: 8px; }
+    .btn-secondary:hover { background: rgba(255,255,255,0.2); border-color: rgba(255,255,255,0.4); }
+    .btn-outline { background: transparent; border: 1.5px solid var(--gold); color: var(--navy); font-weight: 600; padding: 12px 28px; border-radius: 60px; transition: 0.2s; display: inline-block; }
+    .btn-outline:hover { background: var(--gold); color: var(--navy); }
+    /* header */
+    .header { background: var(--navy); padding: 14px 0; color: white; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .logo { font-weight: 700; font-size: 1.4rem; letter-spacing: -0.5px; }
+    .logo span { color: var(--gold); }
+    .header-phone { font-weight: 500; background: rgba(255,255,255,0.06); padding: 8px 18px; border-radius: 40px; border: 1px solid rgba(255,255,255,0.08); }
+    /* hero */
+    .hero { background: var(--navy); color: white; position: relative; overflow: hidden; padding: 40px 0 60px; }
+    .hero-bg { position: absolute; inset: 0; background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzBiMWEyZTtzdG9wLW9wYWNpdHk6MC43IiAvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzBiMWEyZTtzdG9wLW9wYWNpdHk6MC4yIiAvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZykiIC8+PC9zdmc+'), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzBiMWEyZTtzdG9wLW9wYWNpdHk6MC44IiAvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzBiMWEyZTtzdG9wLW9wYWNpdHk6MC4zIiAvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZykiIC8+PC9zdmc+'); background-size: cover, cover; background-position: center, center; background-blend-mode: overlay; }
+    .hero-bg img { width: 100%; height: 100%; object-fit: cover; opacity: 0.5; }
+    .hero-content { position: relative; z-index: 2; display: flex; flex-direction: column; gap: 28px; }
+    .hero-tag { display: inline-block; background: rgba(212,175,55,0.15); color: var(--gold-light); padding: 6px 18px; border-radius: 40px; font-size: 0.8rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; width: fit-content; border: 1px solid rgba(212,175,55,0.15); }
+    .hero h1 { font-size: clamp(2.6rem, 8vw, 4.2rem); font-weight: 700; line-height: 1.1; letter-spacing: -1px; max-width: 800px; }
+    .hero p { font-size: 1.25rem; max-width: 620px; opacity: 0.9; font-weight: 300; line-height: 1.6; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin-top: 8px; }
+    .hero-phone { font-size: 1.2rem; font-weight: 500; display: flex; align-items: center; gap: 8px; }
+    .trust-bar { display: flex; flex-wrap: wrap; gap: 24px 36px; margin-top: 12px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; }
+    .trust-item { display: flex; align-items: center; gap: 8px; font-size: 0.95rem; color: rgba(255,255,255,0.8); }
+    .trust-item svg { fill: var(--gold); width: 18px; height: 18px; }
+    /* flight card */
+    .flight-card-wrap { margin-top: -40px; position: relative; z-index: 5; }
+    .flight-card { background: var(--white); border-radius: 24px; padding: 28px 32px; box-shadow: 0 20px 50px rgba(0,0,0,0.08); display: flex; flex-wrap: wrap; gap: 16px 20px; align-items: flex-end; border: 1px solid rgba(0,0,0,0.02); }
+    .flight-field { flex: 1 0 140px; }
+    .flight-field label { display: block; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: #6b7280; margin-bottom: 4px; }
+    .flight-field select, .flight-field input { width: 100%; padding: 10px 0 6px; border: none; border-bottom: 2px solid var(--grey); font-weight: 500; font-size: 1rem; background: transparent; transition: 0.2s; }
+    .flight-field select:focus, .flight-field input:focus { outline: none; border-bottom-color: var(--gold); }
+    .flight-card .btn-primary { padding: 14px 40px; flex-shrink: 0; }
+    /* sections */
+    section { padding: 60px 0; }
+    .section-title { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; letter-spacing: -0.5px; margin-bottom: 20px; color: var(--navy); }
+    .section-sub { font-size: 1.1rem; color: #4b5563; max-width: 720px; margin-bottom: 36px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 28px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 24px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap: 20px; }
+    .card { background: var(--white); border-radius: 20px; padding: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.02); border: 1px solid rgba(0,0,0,0.03); transition: 0.15s; }
+    .card:hover { box-shadow: 0 12px 28px rgba(0,0,0,0.05); transform: translateY(-2px); }
+    .card-icon { font-size: 2rem; margin-bottom: 12px; }
+    .card h3 { font-weight: 600; font-size: 1.2rem; margin-bottom: 8px; }
+    .card p { color: #4b5563; font-size: 0.95rem; }
+    .gold-accent { color: var(--gold); }
+    .bg-cream { background: var(--cream); }
+    .bg-navy { background: var(--navy); color: white; }
+    .bg-navy .section-title { color: white; }
+    .bg-navy .card { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.08); color: white; }
+    .bg-navy .card p { color: rgba(255,255,255,0.7); }
+    /* destination images */
+    .img-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 16px; margin: 24px 0; }
+    .img-grid img { border-radius: 16px; width: 100%; height: 180px; object-fit: cover; }
+    /* faq */
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 16px 0; }
+    .faq-question { font-weight: 600; font-size: 1.05rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 8px 0; }
+    .faq-answer { max-height: 0; overflow: hidden; transition: 0.3s; color: #4b5563; }
+    .faq-answer.open { max-height: 300px; padding-top: 12px; }
+    .faq-toggle { font-size: 1.5rem; line-height: 1; color: var(--gold); }
+    /* sticky mobile */
+    .sticky-mobile { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: white; padding: 12px 20px; box-shadow: 0 -4px 20px rgba(0,0,0,0.08); z-index: 100; gap: 12px; border-top: 1px solid #eee; }
+    .sticky-mobile a { flex: 1; text-align: center; padding: 12px; border-radius: 40px; font-weight: 600; }
+    .sticky-phone { background: var(--navy); color: white; }
+    .sticky-search { background: var(--gold); color: var(--navy); }
+    @media (max-width: 640px) { .sticky-mobile { display: flex; } .hero { padding-bottom: 100px; } }
+    /* breadcrumb */
+    .breadcrumb { padding: 16px 0 0; font-size: 0.85rem; color: #6b7280; }
+    .breadcrumb span { color: var(--gold); }
+    /* responsive */
+    @media (max-width: 768px) { .flight-card { flex-direction: column; align-items: stretch; } .hero-actions { flex-direction: column; align-items: flex-start; } .header-inner { flex-direction: column; align-items: flex-start; } }
+    /* misc */
+    .text-gold { color: var(--gold); }
+    .mt-8 { margin-top: 8px; }
+    .mb-8 { margin-bottom: 8px; }
+    .inline-block { display: inline-block; }
+    .flex-center { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
   </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"London to Malaga Flights | Cheap Flight Deals | Dial4UFlights","description":"Find London to Malaga flights and compare available options for your trip to Spain.","url":"https://dial4uflights.co.uk/london-to-malaga-flights","inLanguage":"en-GB","isPartOf":{"@type":"WebSite","name":"Dial4UFlights","url":"https://dial4uflights.co.uk/"}}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dial4uflights.co.uk/"},{"@type":"ListItem","position":2,"name":"London to Malaga Flights","item":"https://dial4uflights.co.uk/london-to-malaga-flights"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Dial4UFlights","legalName":"Flycation Limited","url":"https://dial4uflights.co.uk/","telephone":"+442038317712","address":{"@type":"PostalAddress","streetAddress":"167-169 Great Portland Street","addressLocality":"London","postalCode":"W1W 5PF","addressCountry":"GB"}}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Dial4UFlights","url":"https://dial4uflights.co.uk/"}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How can I find London to Malaga flights?","acceptedAnswer":{"@type":"Answer","text":"Compare London airports, dates and cabin class on Dial4UFlights or call +44 20 3831 7712."}},{"@type":"Question","name":"Which London airports fly to Malaga?","acceptedAnswer":{"@type":"Answer","text":"Heathrow, Gatwick, Stansted and Luton offer flights to Malaga (AGP), availability varies by season."}},{"@type":"Question","name":"What is Malaga airport code?","acceptedAnswer":{"@type":"Answer","text":"Malaga Airport code is AGP (Costa del Sol Airport)."}},{"@type":"Question","name":"Are there direct flights from London to Malaga?","acceptedAnswer":{"@type":"Answer","text":"Yes, direct flights operate from several London airports. Schedules vary by airline and season."}},{"@type":"Question","name":"How long is the London to Malaga flight?","acceptedAnswer":{"@type":"Answer","text":"Nonstop flights take approximately 2.5 to 3 hours."}},{"@type":"Question","name":"Can I book business class flights to Malaga?","acceptedAnswer":{"@type":"Answer","text":"Business class options may be available on selected routes. Search or call a flight expert."}},{"@type":"Question","name":"How can I contact Dial4UFlights?","acceptedAnswer":{"@type":"Answer","text":"Call +44 20 3831 7712 or visit dial4uflights.co.uk."}}]}</script>
 </head>
 <body>
-  <header class="nav">
-    <div class="wrap nav-in">
-      <a href="https://dial4uflights.co.uk/" class="logo" rel="noopener">Dial4U<span>Flights</span></a>
-      <nav class="nav-links">
-        <a href="https://dial4uflights.co.uk/" rel="noopener">Flights</a>
-        <a href="https://dial4uflights.co.uk/flights-to-europe" rel="noopener">Europe</a>
-        <a href="https://dial4uflights.co.uk/flights-to-usa" rel="noopener">USA</a>
-        <a href="https://dial4uflights.co.uk/flights-to-caribbean" rel="noopener">Caribbean</a>
-        <a href="https://dial4uflights.co.uk/business-class/new-york" rel="noopener">Business Class</a>
-        <a href="https://dial4uflights.co.uk/about" rel="noopener">About</a>
-      </nav>
-      <a href="https://dial4uflights.co.uk/" class="btn btn-gold" rel="noopener">Search Flights</a>
+  <!-- header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">Dial4U<span>Flights</span></div>
+      <div class="header-phone"><a href="tel:+442038317712" style="color:white;">+44 20 3831 7712</a></div>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="wrap hero-in fade-up">
-      <span class="eye">Flights from the UK</span>
+  <!-- breadcrumb -->
+  <div class="container breadcrumb">Home &gt; <span>London to Malaga Flights</span></div>
+
+  <!-- hero -->
+  <section class="hero" style="padding-bottom:80px;">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-content">
+      <span class="hero-tag">FLIGHTS FROM THE UK</span>
       <h1>London to Malaga Flights</h1>
-      <p class="hero-lead">Find cheap flights from London to Malaga, compare direct options and get personalised help for your Costa del Sol trip.</p>
-      <div class="hero-ctas">
-        <a href="https://dial4uflights.co.uk/" class="btn btn-gold" rel="noopener">Search Malaga Flights</a>
-        <a href="tel:+442038317712" class="btn btn-out">Call Flight Expert</a>
+      <p>Find the right flight from London to Malaga for your next Spanish escape. Compare available options, explore route information and speak with a flight expert when you need personalised help.</p>
+      <div class="hero-actions">
+        <a href="https://dial4uflights.co.uk/" class="btn-primary">Search Flights</a>
+        <a href="tel:+442038317712" class="btn-secondary">Call a Flight Expert</a>
+        <span class="hero-phone"><a href="tel:+442038317712" style="color:white;">+44 20 3831 7712</a></span>
       </div>
-      <div class="trust">
-        <span>UK Flight Experts</span>
-        <span>Personalised Assistance</span>
-        <span>Flexible Options</span>
-        <span>Secure Support</span>
+      <div class="trust-bar">
+        <span class="trust-item"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> UK Flight Experts</span>
+        <span class="trust-item"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Personalised Assistance</span>
+        <span class="trust-item"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Secure Booking Support</span>
+        <span class="trust-item"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Flexible Flight Options</span>
       </div>
     </div>
   </section>
 
-  <div class="search-wrap">
-    <div class="search-card">
-      <div class="sf"><label>From</label><input type="text" value="London" readonly></div>
-      <div class="sf"><label>To</label><input type="text" value="Malaga" readonly></div>
-      <div class="sf"><label>Departure</label><input type="date"></div>
-      <div class="sf"><label>Return</label><input type="date"></div>
-      <div class="sf"><label>Travellers</label><select><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
-      <div class="sf"><label>Cabin</label><select><option>Economy</option><option>Business</option></select></div>
-      <a href="https://dial4uflights.co.uk/" class="btn btn-gold" rel="noopener">Search Flights</a>
+  <!-- flight search card -->
+  <div class="container flight-card-wrap">
+    <div class="flight-card">
+      <div class="flight-field"><label>From</label><input type="text" value="London" readonly></div>
+      <div class="flight-field"><label>To</label><input type="text" value="Malaga" readonly></div>
+      <div class="flight-field"><label>Departure</label><input type="date" value="2026-09-15"></div>
+      <div class="flight-field"><label>Return</label><input type="date" value="2026-09-22"></div>
+      <div class="flight-field"><label>Travellers</label><select><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+      <div class="flight-field"><label>Cabin</label><select><option>Economy</option><option>Business</option></select></div>
+      <a href="https://dial4uflights.co.uk/" class="btn-primary">Search Flights</a>
     </div>
   </div>
 
-  <main>
-    <section class="white">
-      <div class="wrap">
-        <h2>Cheap Flights from London to Malaga</h2>
-        <p>Looking for <a href="https://dial4uflights.co.uk/" rel="noopener"><strong>London to Malaga flights</strong></a>? Travellers search for <a href="https://dial4uflights.co.uk/" rel="noopener">cheap flights from London to Malaga</a>, <a href="https://dial4uflights.co.uk/" rel="noopener">direct flights from London to Malaga</a> and <a href="https://dial4uflights.co.uk/" rel="noopener">London to Malaga return flights</a> for Costa del Sol holidays.</p>
-        <p>Flights land at <strong>Malaga Airport (AGP)</strong>. Options run from <strong>Heathrow (LHR)</strong>, <strong>Gatwick (LGW)</strong>, <strong>Stansted (STN)</strong> and <strong>Luton (LTN)</strong>. Compare <a href="https://dial4uflights.co.uk/" rel="noopener">cheap flights to Malaga</a>, one-way and business class on <a href="https://dial4uflights.co.uk/" rel="noopener">Dial4UFlights</a> or call <a href="tel:+442038317712">+44 20 3831 7712</a>.</p>
-      </div>
-    </section>
-
-    <section class="cream">
-      <div class="wrap">
-        <div class="grid g4">
-          <div class="card"><div class="icon">✈️</div><h3>From</h3><p>London LHR · LGW · STN · LTN</p></div>
-          <div class="card"><div class="icon">🌍</div><h3>To</h3><p>Malaga (AGP)</p></div>
-          <div class="card"><div class="icon">🛬</div><h3>Airport</h3><p>Malaga Costa del Sol</p></div>
-          <div class="card"><div class="icon">🏖️</div><h3>Destination</h3><p>Costa del Sol, Spain</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="white">
-      <div class="wrap">
-        <h2>London Airports for Malaga Flights</h2>
-        <div class="grid g3" style="margin-top:1.2rem">
-          <div class="card"><h3>Heathrow (LHR)</h3><p>Major hub with scheduled services to AGP.</p></div>
-          <div class="card"><h3>Gatwick (LGW)</h3><p>Popular for holiday and frequent leisure flights.</p></div>
-          <div class="card"><h3>Stansted &amp; Luton</h3><p>Budget-friendly options; seasonal capacity varies.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cream">
-      <div class="wrap">
-        <h2>Direct, One-Way &amp; Return Flights</h2>
-        <p><a href="https://dial4uflights.co.uk/" rel="noopener">Direct flights from London to Malaga</a> operate from several airports. Typical nonstop time is <strong>2.5 to 3 hours</strong>. Both one-way and return tickets are available — compare total cost and baggage.</p>
-        <div class="cta">
-          <h3>Search London to Malaga flight deals</h3>
-          <p>Compare cheap flights, direct options and business class.</p>
-          <a href="https://dial4uflights.co.uk/" class="btn btn-gold" rel="noopener">Search Flights</a>
-          <a href="tel:+442038317712" class="btn btn-out">Call +44 20 3831 7712</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="navy">
-      <div class="wrap">
-        <h2>Business Class Flights from London to Malaga</h2>
-        <p>Business class may be available on selected routes and connecting itineraries. Benefits vary by airline. Also explore: <a href="https://dial4uflights.co.uk/business-class/new-york" rel="noopener" style="color:var(--gold)">Business Class New York</a>, <a href="https://dial4uflights.co.uk/business-class/miami" rel="noopener" style="color:var(--gold)">Miami</a>, <a href="https://dial4uflights.co.uk/business-class/kingston" rel="noopener" style="color:var(--gold)">Kingston</a>, <a href="https://dial4uflights.co.uk/business-class/antigua" rel="noopener" style="color:var(--gold)">Antigua</a>.</p>
-        <a href="tel:+442038317712" class="btn btn-gold" style="margin-top:1rem">Speak to a Flight Expert</a>
-      </div>
-    </section>
-
-    <section class="white">
-      <div class="wrap">
-        <h2>When to Travel to Malaga</h2>
-        <div class="grid g4" style="margin-top:1.1rem">
-          <div class="card"><h3>🌸 Spring</h3><p>Mild weather, fewer crowds.</p></div>
-          <div class="card"><h3>☀️ Summer</h3><p>Hot and busy — book early.</p></div>
-          <div class="card"><h3>🍂 Autumn</h3><p>Warm sea, pleasant temps.</p></div>
-          <div class="card"><h3>❄️ Winter</h3><p>Quieter city exploration.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cream">
-      <div class="wrap">
-        <h2>Malaga Travel Highlights</h2>
-        <div class="grid g3" style="margin-top:1.1rem">
-          <div class="card"><h3>🏖️ Beaches</h3><p>Costa del Sol golden sands.</p></div>
-          <div class="card"><h3>🏛️ History</h3><p>Alcazaba, Roman theatre, old town.</p></div>
-          <div class="card"><h3>🍤 Food</h3><p>Tapas, seafood, Andalusian cuisine.</p></div>
-          <div class="card"><h3>☀️ Climate</h3><p>300+ sunny days a year.</p></div>
-          <div class="card"><h3>🚗 Day trips</h3><p>Marbella, Nerja, Ronda nearby.</p></div>
-          <div class="card"><h3>✈️ Easy base</h3><p>AGP is ~8 km from city centre.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Full interlinked keywords -->
-    <section class="white">
-      <div class="wrap">
-        <h2>Explore More Flight Deals from the UK</h2>
-        <p>All keywords below link to the main Dial4UFlights website. Click any term to search or explore related routes.</p>
-
-        <h3 style="margin-top:1.4rem">Commercial Keywords — All Linked</h3>
-        <div class="kw">
-          <a href="https://dial4uflights.co.uk/" rel="noopener">London to Malaga flights</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">cheap flights from London to Malaga</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">cheap flights to Malaga from London</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">direct flights from London to Malaga</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">London to Malaga return flights</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">London to Malaga one way flights</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">London to AGP flights</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">flights from Heathrow to Malaga</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">flights from Gatwick to Malaga</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">flights from Stansted to Malaga</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">flights from Luton to Malaga</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">cheap flights to Malaga</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">Malaga flights</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">flights to Spain</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">cheap flights to Spain</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">UK to Malaga flights</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">Business Class flights from London to Malaga</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">last minute flights to Malaga</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">cheap flights from UK</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">flight deals from UK</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">business class flight deals</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">cheap business class flights</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">premium flights from UK</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">return flights from UK</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">one way flights from UK</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">Costa del Sol flights</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">holiday flights from UK</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">summer flight deals</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">compare flight prices</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">book flights online UK</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">flexible flight tickets</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">baggage inclusive flights</a>
-          <a href="https://dial4uflights.co.uk/flights-to-europe" rel="noopener">cheap flights to Europe</a>
-          <a href="https://dial4uflights.co.uk/flights-to-usa" rel="noopener">cheap flights to USA</a>
-          <a href="https://dial4uflights.co.uk/flights-to-canada" rel="noopener">cheap flights to Canada</a>
-          <a href="https://dial4uflights.co.uk/flights-to-caribbean" rel="noopener">Caribbean flight deals</a>
-          <a href="https://dial4uflights.co.uk/flights-to-asia" rel="noopener">Asia flight deals</a>
-          <a href="https://dial4uflights.co.uk/flights-to-middle-east" rel="noopener">Middle East flight deals</a>
-          <a href="https://dial4uflights.co.uk/flights-to-africa" rel="noopener">flights to Africa</a>
-          <a href="https://dial4uflights.co.uk/flights-to-australia" rel="noopener">flights to Australia</a>
-          <a href="https://dial4uflights.co.uk/flights-to-new-zealand" rel="noopener">flights to New Zealand</a>
-          <a href="https://dial4uflights.co.uk/flights-to-mexico" rel="noopener">flights to Mexico</a>
-          <a href="https://dial4uflights.co.uk/flights-to-latin-america" rel="noopener">Latin America flights</a>
-          <a href="https://dial4uflights.co.uk/flights-to-far-east" rel="noopener">Far East flights</a>
-          <a href="https://dial4uflights.co.uk/business-class/new-york" rel="noopener">business class New York</a>
-          <a href="https://dial4uflights.co.uk/business-class/miami" rel="noopener">business class Miami</a>
-          <a href="https://dial4uflights.co.uk/business-class/orlando" rel="noopener">business class Orlando</a>
-          <a href="https://dial4uflights.co.uk/business-class/los-angeles" rel="noopener">business class Los Angeles</a>
-          <a href="https://dial4uflights.co.uk/business-class/chicago" rel="noopener">business class Chicago</a>
-          <a href="https://dial4uflights.co.uk/business-class/houston" rel="noopener">business class Houston</a>
-          <a href="https://dial4uflights.co.uk/business-class/san-francisco" rel="noopener">business class San Francisco</a>
-          <a href="https://dial4uflights.co.uk/business-class/newark" rel="noopener">business class Newark</a>
-          <a href="https://dial4uflights.co.uk/business-class/tampa" rel="noopener">business class Tampa</a>
-          <a href="https://dial4uflights.co.uk/business-class/kingston" rel="noopener">business class Kingston</a>
-          <a href="https://dial4uflights.co.uk/business-class/montego-bay" rel="noopener">business class Montego Bay</a>
-          <a href="https://dial4uflights.co.uk/business-class/antigua" rel="noopener">business class Antigua</a>
-          <a href="https://dial4uflights.co.uk/business-class/barbados" rel="noopener">business class Barbados</a>
-          <a href="https://dial4uflights.co.uk/business-class/singapore" rel="noopener">business class Singapore</a>
-          <a href="https://dial4uflights.co.uk/business-class/bangkok" rel="noopener">business class Bangkok</a>
-          <a href="https://dial4uflights.co.uk/business-class/hong-kong" rel="noopener">business class Hong Kong</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">search all flights</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">book flights now</a>
-          <a href="https://dial4uflights.co.uk/" rel="noopener">UK flight specialist</a>
-        </div>
-
-        <h3 style="margin-top:1.8rem">Regional &amp; Business Class Pages</h3>
-        <div class="grid g3" style="margin-top:1rem">
-          <div class="card"><h3><a href="https://dial4uflights.co.uk/flights-to-europe" rel="noopener">Flights to Europe</a></h3><p>UK to Europe deals</p></div>
-          <div class="card"><h3><a href="https://dial4uflights.co.uk/flights-to-usa" rel="noopener">Flights to USA</a></h3><p>New York · Miami · LA</p></div>
-          <div class="card"><h3><a href="https://dial4uflights.co.uk/flights-to-caribbean" rel="noopener">Caribbean Flights</a></h3><p>Antigua · Barbados · Jamaica</p></div>
-          <div class="card"><h3><a href="https://dial4uflights.co.uk/flights-to-canada" rel="noopener">Flights to Canada</a></h3><p>Toronto · Vancouver</p></div>
-          <div class="card"><h3><a href="https://dial4uflights.co.uk/flights-to-asia" rel="noopener">Flights to Asia</a></h3><p>Singapore · Bangkok</p></div>
-          <div class="card"><h3><a href="https://dial4uflights.co.uk/flights-to-middle-east" rel="noopener">Middle East Flights</a></h3><p>Dubai · Abu Dhabi</p></div>
-          <div class="card"><h3><a href="https://dial4uflights.co.uk/business-class/new-york" rel="noopener">Business Class New York</a></h3><p>Premium NYC flights</p></div>
-          <div class="card"><h3><a href="https://dial4uflights.co.uk/business-class/kingston" rel="noopener">Business Class Kingston</a></h3><p>Premium Jamaica flights</p></div>
-          <div class="card"><h3><a href="https://dial4uflights.co.uk/business-class/antigua" rel="noopener">Business Class Antigua</a></h3><p>Premium Caribbean</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cream">
-      <div class="wrap">
-        <h2>Why Choose Dial4UFlights?</h2>
-        <p><strong>Flycation Limited</strong> · Company No. 14100185 · 167-169 Great Portland Street, London W1W 5PF · <a href="tel:+442038317712">+44 20 3831 7712</a> · <a href="https://dial4uflights.co.uk/" rel="noopener">dial4uflights.co.uk</a></p>
-        <div class="cta" style="margin-top:1.3rem">
-          <h3>Ready to search London to Malaga flights?</h3>
-          <p>Compare options or speak with a UK flight expert.</p>
-          <a href="https://dial4uflights.co.uk/" class="btn btn-gold" rel="noopener">Search Flights</a>
-          <a href="tel:+442038317712" class="btn btn-out">Call Expert</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="white">
-      <div class="wrap">
-        <h2>London to Malaga Flights FAQs</h2>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">How can I find London to Malaga flights?</button><div class="faq-a">Compare Heathrow, Gatwick, Stansted and Luton dates on Dial4UFlights or call +44 20 3831 7712.</div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">Which London airports fly to Malaga?</button><div class="faq-a">Heathrow, Gatwick, Stansted and Luton offer flights to AGP; availability varies by season.</div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">What is Malaga airport code?</button><div class="faq-a">Malaga Airport code is AGP (Costa del Sol Airport).</div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">Are there direct flights from London to Malaga?</button><div class="faq-a">Yes. Direct flights operate from several London airports. Schedules vary by airline and season.</div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">How long is the London to Malaga flight?</button><div class="faq-a">Nonstop flights take approximately 2.5 to 3 hours.</div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">Can I book business class flights to Malaga?</button><div class="faq-a">Business class may be available on selected routes. Search or call a flight expert.</div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">How can I contact Dial4UFlights?</button><div class="faq-a">Call +44 20 3831 7712 or visit dial4uflights.co.uk. Flycation Limited, Company No. 14100185.</div></div>
-      </div>
-    </section>
-
-    <section class="navy">
-      <div class="wrap" style="text-align:center;max-width:520px">
-        <h2>Start your Malaga journey</h2>
-        <p>Search cheap flights from London to Malaga or speak with a flight expert.</p>
-        <a href="https://dial4uflights.co.uk/" class="btn btn-gold" style="margin-top:.5rem" rel="noopener">Search Flights</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap">
-      <div class="fg">
-        <div>
-          <strong>Dial4UFlights</strong>
-          <p>Flycation Limited · No. 14100185<br>167-169 Great Portland Street<br>London W1W 5PF</p>
-          <p style="margin-top:.5rem"><a href="tel:+442038317712">+44 20 3831 7712</a></p>
-        </div>
-        <div>
-          <strong>Regional</strong>
-          <ul>
-            <li><a href="https://dial4uflights.co.uk/flights-to-europe" rel="noopener">Europe</a></li>
-            <li><a href="https://dial4uflights.co.uk/flights-to-usa" rel="noopener">USA</a></li>
-            <li><a href="https://dial4uflights.co.uk/flights-to-caribbean" rel="noopener">Caribbean</a></li>
-            <li><a href="https://dial4uflights.co.uk/flights-to-canada" rel="noopener">Canada</a></li>
-            <li><a href="https://dial4uflights.co.uk/flights-to-asia" rel="noopener">Asia</a></li>
-            <li><a href="https://dial4uflights.co.uk/flights-to-middle-east" rel="noopener">Middle East</a></li>
-          </ul>
-        </div>
-        <div>
-          <strong>Business Class</strong>
-          <ul>
-            <li><a href="https://dial4uflights.co.uk/business-class/new-york" rel="noopener">New York</a></li>
-            <li><a href="https://dial4uflights.co.uk/business-class/miami" rel="noopener">Miami</a></li>
-            <li><a href="https://dial4uflights.co.uk/business-class/kingston" rel="noopener">Kingston</a></li>
-            <li><a href="https://dial4uflights.co.uk/business-class/antigua" rel="noopener">Antigua</a></li>
-            <li><a href="https://dial4uflights.co.uk/business-class/barbados" rel="noopener">Barbados</a></li>
-            <li><a href="https://dial4uflights.co.uk/business-class/singapore" rel="noopener">Singapore</a></li>
-          </ul>
-        </div>
-        <div>
-          <strong>Company</strong>
-          <ul>
-            <li><a href="https://dial4uflights.co.uk/" rel="noopener">Home</a></li>
-            <li><a href="https://dial4uflights.co.uk/about" rel="noopener">About Us</a></li>
-            <li><a href="tel:+442038317712">Call Expert</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="fb"><p>© Dial4UFlights · Trading name of Flycation Limited · Company No. 14100185</p></div>
+  <!-- intro -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Flights from London to Malaga</h2>
+      <p class="section-sub">Malaga, the heart of the Costa del Sol, is one of Spain's most accessible and vibrant destinations. Whether you're planning a beach holiday, a city break, or a gateway to Andalusia, the route from London to Malaga offers frequent and varied flight options.</p>
+      <p>Flights from London to Malaga operate from several London airports, including Heathrow, Gatwick, Stansted, and Luton. Both direct and connecting flights are available, with journey times and fares varying by airline, season, and booking window. Malaga Airport (AGP) is the main international gateway for the region, located just 8 km southwest of the city centre, with excellent transport links to the Costa del Sol. Comparing dates, airlines, and baggage allowances can help travellers find the best value for their trip.</p>
     </div>
-  </footer>
+  </section>
 
-  <div class="sticky">
-    <a href="https://dial4uflights.co.uk/" class="btn btn-gold" rel="noopener">Search Flights</a>
-    <a href="tel:+442038317712" class="btn btn-navy">Call</a>
+  <!-- route info cards -->
+  <section class="bg-cream">
+    <div class="container">
+      <div class="grid-4">
+        <div class="card"><div class="card-icon">✈️</div><h3>From</h3><p>London (LHR, LGW, STN, LTN)</p></div>
+        <div class="card"><div class="card-icon">🌍</div><h3>To</h3><p>Malaga (AGP)</p></div>
+        <div class="card"><div class="card-icon">🛬</div><h3>Airport</h3><p>Malaga Airport (AGP)</p></div>
+        <div class="card"><div class="card-icon">🏖️</div><h3>Destination</h3><p>Costa del Sol, Spain</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- London airports -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">London Airports for Malaga Flights</h2>
+      <div class="grid-3">
+        <div class="card"><h3>Heathrow (LHR)</h3><p>Major hub with daily flights, often including British Airways and Iberia.</p></div>
+        <div class="card"><h3>Gatwick (LGW)</h3><p>Popular for holiday carriers, easyJet and TUI offer frequent services.</p></div>
+        <div class="card"><h3>Stansted (STN) &amp; Luton (LTN)</h3><p>Budget-friendly options, seasonal availability varies.</p></div>
+      </div>
+      <p class="mt-8" style="color:#4b5563;">Availability depends on airline, season, and travel date. Always check live schedules.</p>
+    </div>
+  </section>
+
+  <!-- Malaga airport -->
+  <section class="bg-cream">
+    <div class="container">
+      <h2 class="section-title">Malaga Airport (AGP)</h2>
+      <div style="display:flex; flex-wrap:wrap; gap:30px; align-items:center;">
+        <div style="flex:2;min-width:260px;">
+          <p>Malaga Airport (AGP) is the busiest airport in Andalusia. Located just 8 km southwest of the city centre, it offers quick access to Malaga, Torremolinos, Benalmádena, and the wider Costa del Sol. Transport options include taxis, buses, train (Cercanías) to the city centre, and car hire. Private transfers are also available for a seamless journey to your final destination.</p>
+        </div>
+        <div style="flex:1;min-width:140px;">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='180' viewBox='0 0 300 180'%3E%3Crect width='300' height='180' fill='%23d4af37'/%3E%3Ctext x='20' y='100' font-family='Inter' fill='%230b1a2e' font-size='18' font-weight='bold'%3EMalaga AGP%3C/text%3E%3C/svg%3E" alt="Malaga Airport terminal and runway" width="300" height="180" style="border-radius:16px; width:100%;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- cheap flights -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Cheap Flights from London to Malaga</h2>
+      <p>Finding budget-friendly fares requires flexibility. Compare travel dates, different London airports, one-way vs return, and direct vs connecting options. Check baggage allowances, cabin class, and fare restrictions to avoid hidden costs. Comparing total journey time and overall trip cost ensures you get the best deal for your needs.</p>
+      <div class="grid-3" style="margin-top:24px;">
+        <div class="card"><h3>📅 Compare Dates</h3><p>Midweek and off-peak seasons often offer lower fares.</p></div>
+        <div class="card"><h3>🛫 Airport Choice</h3><p>Flights from Gatwick or Stansted may be cheaper than Heathrow.</p></div>
+        <div class="card"><h3>🧳 Baggage &amp; Class</h3><p>Check carry-on and hold luggage costs; premium cabins add value for some.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- direct flights + flight time combined -->
+  <section class="bg-cream">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start;">
+        <div><h2 class="section-title" style="margin-bottom:12px;">Direct Flights from London to Malaga</h2><p>Direct flights are available from multiple London airports, with British Airways, easyJet, Ryanair, and Vueling among the carriers. Seasonality and date availability affect schedules. Always verify with the airline as timetables change.</p></div>
+        <div><h2 class="section-title" style="margin-bottom:12px;">London to Malaga Flight Time</h2><p>Nonstop flight time is approximately 2.5 to 3 hours, depending on departure airport and aircraft. Actual duration may vary due to weather, air traffic, and routing. Connecting flights take significantly longer.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- one-way / return -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">One-Way and Return Flights from London to Malaga</h2>
+      <p>One-way fares offer flexibility for open-jaw itineraries or extended stays. Return flights often provide better value for round trips. Compare total journey cost, baggage, and fare rules. Speak to an expert for tailored advice.</p>
+      <a href="https://dial4uflights.co.uk/" class="btn-outline" style="margin-top:20px;">Explore Flight Options</a>
+    </div>
+  </section>
+
+  <!-- business class dark -->
+  <section class="bg-navy">
+    <div class="container">
+      <h2 class="section-title">Business Class Flights from London to Malaga</h2>
+      <p style="max-width:700px;">Business Class on this route typically involves connecting itineraries via hubs like Madrid or Frankfurt. Benefits may include extra baggage, lounge access, priority check-in, and flexible rebooking. Availability varies by airline and route. Contact us for personalised Business Class options.</p>
+      <a href="tel:+442038317712" class="btn-primary" style="margin-top:24px; background:white; color:var(--navy);">Speak to a Flight Expert</a>
+    </div>
+  </section>
+
+  <!-- best time to visit -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">When to Travel to Malaga</h2>
+      <div class="grid-4">
+        <div class="card"><h3>🌸 Spring</h3><p>Mild weather, fewer crowds, blooming landscapes.</p></div>
+        <div class="card"><h3>☀️ Summer</h3><p>Hot, busy, high demand; book early.</p></div>
+        <div class="card"><h3>🍂 Autumn</h3><p>Warm sea, pleasant temperatures, lower crowds.</p></div>
+        <div class="card"><h3>❄️ Winter</h3><p>Cooler, quieter, good for city exploration.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- travel guide + image grid -->
+  <section class="bg-cream">
+    <div class="container">
+      <h2 class="section-title">Malaga Travel Guide</h2>
+      <div class="img-grid">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='180' viewBox='0 0 300 180'%3E%3Crect width='300' height='180' fill='%230b1a2e'/%3E%3Ctext x='20' y='90' font-family='Inter' fill='white' font-size='16' font-weight='bold'%3EMalaga Old Town%3C/text%3E%3C/svg%3E" alt="Malaga Old Town narrow street with flowers" width="300" height="180" loading="lazy">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='180' viewBox='0 0 300 180'%3E%3Crect width='300' height='180' fill='%23d4af37'/%3E%3Ctext x='20' y='90' font-family='Inter' fill='%230b1a2e' font-size='16' font-weight='bold'%3ECosta del Sol%3C/text%3E%3C/svg%3E" alt="Costa del Sol beach with palm trees" width="300" height="180" loading="lazy">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='180' viewBox='0 0 300 180'%3E%3Crect width='300' height='180' fill='%230b1a2e'/%3E%3Ctext x='20' y='90' font-family='Inter' fill='white' font-size='16' font-weight='bold'%3EMalaga Harbour%3C/text%3E%3C/svg%3E" alt="Malaga harbour and Muelle Uno" width="300" height="180" loading="lazy">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='180' viewBox='0 0 300 180'%3E%3Crect width='300' height='180' fill='%23d4af37'/%3E%3Ctext x='20' y='90' font-family='Inter' fill='%230b1a2e' font-size='16' font-weight='bold'%3EAlcazaba%3C/text%3E%3C/svg%3E" alt="Alcazaba fortress in Malaga" width="300" height="180" loading="lazy">
+      </div>
+      <p>Discover Malaga's old town, Alcazaba, Picasso Museum, and vibrant port. Day trips to Marbella, Nerja, and Ronda are easily accessible. Andalusian cuisine, flamenco, and warm hospitality await.</p>
+    </div>
+  </section>
+
+  <!-- why choose malaga + why dial4u -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Why Travellers Choose Malaga</h2>
+      <div class="grid-3">
+        <div class="card"><h3>🏖️ Mediterranean Beaches</h3><p>Golden sands and crystal-clear water.</p></div>
+        <div class="card"><h3>🏛️ Historic Attractions</h3><p>Roman theatre, Alcazaba, and cathedral.</p></div>
+        <div class="card"><h3>🍤 Spanish Food</h3><p>Fresh seafood, tapas, and local wines.</p></div>
+        <div class="card"><h3>☀️ Warm Climate</h3><p>Over 300 sunny days per year.</p></div>
+        <div class="card"><h3>🚗 Costa del Sol Access</h3><p>Gateway to Andalusia's finest towns.</p></div>
+        <div class="card"><h3>✈️ Easy Base</h3><p>Fly in, explore, and relax.</p></div>
+      </div>
+      <div style="margin-top:48px; background:var(--cream); padding:32px; border-radius:24px;">
+        <h3 style="font-size:1.6rem;">Why Choose Dial4UFlights</h3>
+        <p><strong>Flycation Limited</strong> · Company No. 14100185<br>167–169 Great Portland Street, London W1W 5PF<br><a href="tel:+442038317712" style="color:var(--gold);font-weight:600;">+44 20 3831 7712</a><br><a href="https://dial4uflights.co.uk/" style="color:var(--navy);font-weight:500;">dial4uflights.co.uk</a></p>
+        <p style="margin-top:8px;">We provide expert, personalised flight assistance. No fake reviews or guarantees — just honest, professional service.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ accordion -->
+  <section class="bg-cream">
+    <div class="container">
+      <h2 class="section-title">London to Malaga Flights FAQs</h2>
+      <div class="faq-list">
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>How can I find London to Malaga flights?</span><span class="faq-toggle">+</span></div><div class="faq-answer">Use our search tool or visit Dial4UFlights to compare live options from multiple airlines.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Which London airports offer flights to Malaga?</span><span class="faq-toggle">+</span></div><div class="faq-answer">Heathrow, Gatwick, Stansted, and Luton all offer flights, with varying availability.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>What airport do flights to Malaga use?</span><span class="faq-toggle">+</span></div><div class="faq-answer">All flights to Malaga land at Malaga Airport (AGP), also known as Costa del Sol Airport.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>What is Malaga Airport's code?</span><span class="faq-toggle">+</span></div><div class="faq-answer">The IATA code for Malaga Airport is AGP.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Are there direct flights from London to Malaga?</span><span class="faq-toggle">+</span></div><div class="faq-answer">Yes, direct flights are available, but schedules vary by airline and season. Always check live availability.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>How long is a London to Malaga flight?</span><span class="faq-toggle">+</span></div><div class="faq-answer">Nonstop flights take approximately 2.5 to 3 hours; connecting flights take longer.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>How can I find cheap flights from London to Malaga?</span><span class="faq-toggle">+</span></div><div class="faq-answer">Compare dates, airports, and airlines. Use our search to explore current options.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Can I book one-way flights from London to Malaga?</span><span class="faq-toggle">+</span></div><div class="faq-answer">Yes, one-way tickets are available. Compare them with return fares for the best value.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Can I book return flights?</span><span class="faq-toggle">+</span></div><div class="faq-answer">Absolutely, return flights are the most common choice for round trips.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Can I book Business Class flights?</span><span class="faq-toggle">+</span></div><div class="faq-answer">Business Class is available via connecting itineraries; contact us for tailored options.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Does baggage affect the total flight cost?</span><span class="faq-toggle">+</span></div><div class="faq-answer">Yes, baggage fees vary by airline and fare type. Always check inclusions before booking.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>When is a good time to visit Malaga?</span><span class="faq-toggle">+</span></div><div class="faq-answer">Spring and autumn offer pleasant weather and fewer crowds; summer is hot and busy.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>How far is Malaga Airport from Malaga city?</span><span class="faq-toggle">+</span></div><div class="faq-answer">AGP is about 8 km from the city centre, around 15-20 minutes by car or train.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>How can I compare different flight options?</span><span class="faq-toggle">+</span></div><div class="faq-answer">Use our flight search or speak to an expert for a detailed comparison.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Can I travel from London to other Costa del Sol destinations through Malaga?</span><span class="faq-toggle">+</span></div><div class="faq-answer">Yes, Malaga is the gateway to the Costa del Sol with easy connections to Marbella, Torremolinos, and more.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Can I get help choosing a flight?</span><span class="faq-toggle">+</span></div><div class="faq-answer">Our flight experts are available by phone or email to assist with your selection.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>How do I contact Dial4UFlights?</span><span class="faq-toggle">+</span></div><div class="faq-answer">Call +44 20 3831 7712 or visit dial4uflights.co.uk for support.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- sticky mobile -->
+  <div class="sticky-mobile">
+    <a href="https://dial4uflights.co.uk/" class="sticky-search">Search Flights</a>
+    <a href="tel:+442038317712" class="sticky-phone">Call</a>
   </div>
 
   <script>
-    document.querySelectorAll('.faq-q').forEach(btn=>{
-      btn.addEventListener('click',()=>{
-        const item=btn.parentElement;
-        const open=item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-q').setAttribute('aria-expanded','false')});
-        if(!open){item.classList.add('open');btn.setAttribute('aria-expanded','true')}
-      });
-    });
+    function toggleFaq(el) {
+      const answer = el.nextElementSibling;
+      const toggle = el.querySelector('.faq-toggle');
+      if (answer.classList.contains('open')) {
+        answer.classList.remove('open');
+        toggle.textContent = '+';
+      } else {
+        answer.classList.add('open');
+        toggle.textContent = '−';
+      }
+    }
+    // schema: FAQPage (valid, matches visible)
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"How can I find London to Malaga flights?","acceptedAnswer":{"@type":"Answer","text":"Use our search tool or visit Dial4UFlights to compare live options from multiple airlines."}},
+        {"@type":"Question","name":"Which London airports offer flights to Malaga?","acceptedAnswer":{"@type":"Answer","text":"Heathrow, Gatwick, Stansted, and Luton all offer flights, with varying availability."}},
+        {"@type":"Question","name":"What airport do flights to Malaga use?","acceptedAnswer":{"@type":"Answer","text":"All flights to Malaga land at Malaga Airport (AGP), also known as Costa del Sol Airport."}},
+        {"@type":"Question","name":"What is Malaga Airport's code?","acceptedAnswer":{"@type":"Answer","text":"The IATA code for Malaga Airport is AGP."}},
+        {"@type":"Question","name":"Are there direct flights from London to Malaga?","acceptedAnswer":{"@type":"Answer","text":"Yes, direct flights are available, but schedules vary by airline and season. Always check live availability."}},
+        {"@type":"Question","name":"How long is a London to Malaga flight?","acceptedAnswer":{"@type":"Answer","text":"Nonstop flights take approximately 2.5 to 3 hours; connecting flights take longer."}},
+        {"@type":"Question","name":"How can I find cheap flights from London to Malaga?","acceptedAnswer":{"@type":"Answer","text":"Compare dates, airports, and airlines. Use our search to explore current options."}},
+        {"@type":"Question","name":"Can I book one-way flights from London to Malaga?","acceptedAnswer":{"@type":"Answer","text":"Yes, one-way tickets are available. Compare them with return fares for the best value."}},
+        {"@type":"Question","name":"Can I book return flights?","acceptedAnswer":{"@type":"Answer","text":"Absolutely, return flights are the most common choice for round trips."}},
+        {"@type":"Question","name":"Can I book Business Class flights?","acceptedAnswer":{"@type":"Answer","text":"Business Class is available via connecting itineraries; contact us for tailored options."}},
+        {"@type":"Question","name":"Does baggage affect the total flight cost?","acceptedAnswer":{"@type":"Answer","text":"Yes, baggage fees vary by airline and fare type. Always check inclusions before booking."}},
+        {"@type":"Question","name":"When is a good time to visit Malaga?","acceptedAnswer":{"@type":"Answer","text":"Spring and autumn offer pleasant weather and fewer crowds; summer is hot and busy."}},
+        {"@type":"Question","name":"How far is Malaga Airport from Malaga city?","acceptedAnswer":{"@type":"Answer","text":"AGP is about 8 km from the city centre, around 15-20 minutes by car or train."}},
+        {"@type":"Question","name":"How can I compare different flight options?","acceptedAnswer":{"@type":"Answer","text":"Use our flight search or speak to an expert for a detailed comparison."}},
+        {"@type":"Question","name":"Can I travel from London to other Costa del Sol destinations through Malaga?","acceptedAnswer":{"@type":"Answer","text":"Yes, Malaga is the gateway to the Costa del Sol with easy connections to Marbella, Torremolinos, and more."}},
+        {"@type":"Question","name":"Can I get help choosing a flight?","acceptedAnswer":{"@type":"Answer","text":"Our flight experts are available by phone or email to assist with your selection."}},
+        {"@type":"Question","name":"How do I contact Dial4UFlights?","acceptedAnswer":{"@type":"Answer","text":"Call +44 20 3831 7712 or visit dial4uflights.co.uk for support."}}
+      ]
+    };
+    const orgSchema = {
+      "@context":"https://schema.org",
+      "@type":"Organization",
+      "name":"Dial4UFlights",
+      "url":"https://dial4uflights.co.uk/",
+      "logo":"https://dial4uflights.co.uk/assets/logo.webp",
+      "contactPoint":{"@type":"ContactPoint","telephone":"+44-20-3831-7712","contactType":"sales"}
+    };
+    const breadSchema = {
+      "@context":"https://schema.org",
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://dial4uflights.co.uk/"},
+        {"@type":"ListItem","position":2,"name":"London to Malaga Flights","item":"https://dial4uflights.co.uk/london-to-malaga-flights"}
+      ]
+    };
+    const webSchema = {"@context":"https://schema.org","@type":"WebSite","name":"Dial4UFlights","url":"https://dial4uflights.co.uk/"};
+    const pageSchema = {"@context":"https://schema.org","@type":"WebPage","name":"London to Malaga Flights","description":"Find London to Malaga flights and compare available options. Expert support from Dial4UFlights.","url":"https://dial4uflights.co.uk/london-to-malaga-flights"};
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify([faqSchema, orgSchema, breadSchema, webSchema, pageSchema]);
+    document.head.appendChild(script);
   </script>
 </body>
 </html>
